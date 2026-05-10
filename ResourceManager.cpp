@@ -1,7 +1,7 @@
-#include "../include/ResourceManager.h"
-#include "../include/LabHardware.h"
-#include "../include/CafeteriaPerishable.h"
-#include "../include/BookstoreMedia.h"
+#include "ResourceManager.h"
+#include "LabHardware.h"
+#include "CafeteriaPerishable.h"
+#include "BookstoreMedia.h"
 #include <iostream>
 #include <iomanip>
 #include <sstream>

@@ -1,4 +1,4 @@
-#include "../include/BookstoreMedia.h"
+#include "BookstoreMedia.h"
 #include <iomanip>
 #include <sstream>
 

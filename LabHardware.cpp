@@ -1,4 +1,4 @@
-#include "../include/LabHardware.h"
+#include "LabHardware.h"
 #include <iomanip>
 #include <sstream>
 
