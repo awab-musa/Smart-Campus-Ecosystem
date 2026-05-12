@@ -12,15 +12,12 @@ private:
 
 public:
     BookstoreMedia();
-    BookstoreMedia(const string &id, const string &name,
-                   double price, int stock,
-                   const string &isbn, const string &author,
-                   int edition);
+    BookstoreMedia(const string &id, const string &name, double price, int stock,
+                   const string &isbn, const string &author, int edition);
 
     string getIsbn() const;
     string getAuthor() const;
     int getEdition() const;
-
     void setIsbn(const string &i);
     void setAuthor(const string &a);
     void setEdition(int e);

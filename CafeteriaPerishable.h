@@ -12,15 +12,12 @@ private:
 
 public:
     CafeteriaPerishable();
-    CafeteriaPerishable(const string &id, const string &name,
-                        double price, int stock,
-                        const string &expiryDate,
-                        bool isRefrigerated, int calories);
+    CafeteriaPerishable(const string &id, const string &name, double price, int stock,
+                        const string &expiryDate, bool isRefrigerated, int calories);
 
     string getExpiryDate() const;
     bool getIsRefrigerated() const;
     int getCalories() const;
-
     void setExpiryDate(const string &d);
     void setIsRefrigerated(bool r);
     void setCalories(int c);

@@ -12,15 +12,13 @@ private:
 
 public:
     LabHardware();
-    LabHardware(const string &id, const string &name,
-                double price, int stock,
+    LabHardware(const string &id, const string &name, double price, int stock,
                 int warrantyMonths, const string &manufacturer,
                 const string &serialNumber);
 
     int getWarrantyMonths() const;
     string getManufacturer() const;
     string getSerialNumber() const;
-
     void setWarrantyMonths(int w);
     void setManufacturer(const string &m);
     void setSerialNumber(const string &s);

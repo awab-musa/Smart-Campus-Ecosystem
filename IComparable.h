@@ -1,10 +1,13 @@
-#include <iostream>
-using namespace std;
+#ifndef ICOMPARABLE_H
+#define ICOMPARABLE_H
 
 class Resource;
+
 class IComparable
 {
 public:
-    virtual bool comparaCost(const Resource *other) const = 0;
+    virtual bool compareCost(const Resource *other) const = 0;
     virtual ~IComparable() = default;
 };
+
+#endif
