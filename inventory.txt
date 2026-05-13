@@ -1,0 +1,8 @@
+LAB|102|Oscilloscope DS1054Z|349.00|18|36|Rigol|SN-002
+LAB|103|Raspberry Pi 4 Model B|75.50|15|12|Raspberry Pi Foundation|SN-003
+CAFE|201|Grilled Chicken Wrap|4.50|50|2026-06-01|1|450
+CAFE|202|Fresh Orange Juice|2.25|80|2026-05-20|1|120
+CAFE|203|Veggie Salad Box|3.75|40|2026-05-18|0|280
+BOOK|301|Introduction to Algorithms|89.99|30|978-0262033848|Cormen et al.|4
+BOOK|302|Clean Code|42.00|25|978-0132350884|Robert C. Martin|1
+BOOK|303|Design Patterns|55.00|18|978-0201633610|Gang of Four|1

@@ -1,0 +1,6 @@
+# Smart Campus Transaction Log
+
+# Format: OrderID|User|Role|Items|Subtotal|Discount|Delivery|Total|PaymentType|…
+
+OrderID:1000|User:Mohamed Ghazi|Role:Student|Items:2|Subtotal:131.49|Discount:0.00|Delivery:0.00|Total:131.49|PaymentType:Cash|Tendered:150.000000
+OrderID:1001|User:Dr. Lamia|Role:Staff|Items:1|Subtotal:45.99|Discount:4.60|Delivery:5.00|Total:46.39|PaymentType:Card|Card:xxxx-xxxx-xxxx-4321|Holder:Lamia
