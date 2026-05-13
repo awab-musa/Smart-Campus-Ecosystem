@@ -1,6 +1,10 @@
 #include "LabHardware.h"
 #include <iomanip>
 #include <sstream>
+#include <string>
+#include <vector>
+#include <stdexcept>
+using namespace std;
 
 LabHardware::LabHardware()
     : Resource(), warrantyMonths(0), manufacturer(""), serialNumber("") {}
@@ -60,4 +64,32 @@ string LabHardware::serialize() const
         << manufacturer << "|"
         << serialNumber;
     return oss.str();
+}
+
+LabHardware *LabHardware::fromString(const string &line)
+{
+    stringstream ss(line);
+    string token;
+    vector<string> tokens;
+
+    while (getline(ss, token, '|'))
+    {
+        tokens.push_back(token);
+    }
+    // Expected format: LAB|id|name|price|stock|warrantyMonths|manufacturer|serialNumber
+    // Index:            0   1  2    3     4     5              6            7
+    if (tokens.size() < 8)
+    {
+        throw invalid_argument("Invalid LabHardware data: " + line);
+    }
+
+    string id = tokens[1];
+    string name = tokens[2];
+    double price = stod(tokens[3]);
+    int stock = stoi(tokens[4]);
+    int warranty = stoi(tokens[5]);
+    string manufacturer = tokens[6];
+    string serialNumber = tokens[7];
+
+    return new LabHardware(id, name, price, stock, warranty, manufacturer, serialNumber);
 }

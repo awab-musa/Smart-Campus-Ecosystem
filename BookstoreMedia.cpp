@@ -1,6 +1,7 @@
 #include "BookstoreMedia.h"
 #include <iomanip>
 #include <sstream>
+#include <vector>
 
 BookstoreMedia::BookstoreMedia()
     : Resource(), isbn(""), author(""), edition(1) {}
@@ -27,7 +28,7 @@ string BookstoreMedia::getMediaType() const
 
 string BookstoreMedia::getFullTitle() const
 {
-    return name + " — Edition " + to_string(edition) + " by " + author;
+    return name + " â€” Edition " + to_string(edition) + " by " + author;
 }
 
 void BookstoreMedia::displayInfo() const
@@ -61,4 +62,22 @@ string BookstoreMedia::serialize() const
         << author << "|"
         << edition;
     return oss.str();
+}
+BookstoreMedia *BookstoreMedia::fromString(const string &line)
+{
+    stringstream ss(line);
+    string token;
+    vector<string> tokens;
+    while (getline(ss, token, '|'))
+        tokens.push_back(token);
+    if (tokens.size() < 8)
+        throw invalid_argument("Invalid BookstoreMedia data: " + line);
+    string id = tokens[1];
+    string name = tokens[2];
+    double price = stod(tokens[3]);
+    int stock = stoi(tokens[4]);
+    string isbn = tokens[5];
+    string author = tokens[6];
+    int edition = stoi(tokens[7]);
+    return new BookstoreMedia(id, name, price, stock, isbn, author, edition);
 }

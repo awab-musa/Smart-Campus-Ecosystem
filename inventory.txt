@@ -1,17 +1,9 @@
-# Smart Campus Ecosystem — inventory.txt
-# Format per type:
-#   LAB  |id|name|price|stock|warrantyMonths|manufacturer|serialNumber
-#   CAFE |id|name|price|stock|expiryDate|isRefrigerated(1/0)|calories
-#   BOOK |id|name|price|stock|isbn|author|edition
-#
-# This file is auto-updated by FileManager on every restock/purchase.
-
-LAB|R001|Oscilloscope|4500.00|12|24|Tektronix|SN-4421
-LAB|R002|Digital Multimeter|850.00|30|12|Fluke|FL-9982
-LAB|R003|Soldering Station|1200.00|8|18|Hakko|HK-3310
-CAFE|R004|Fresh Orange Juice|25.00|100|2026-06-30|1|120
-CAFE|R005|Caesar Salad Box|45.00|60|2026-05-12|1|350
-CAFE|R006|Mineral Water 500ml|10.00|200|2027-01-01|0|0
-BOOK|R007|Object-Oriented Programming in C++|320.00|25|978-0134448237|Robert Lafore|4
-BOOK|R008|Data Structures and Algorithm Analysis|410.00|18|978-0132576277|Mark Weiss|3
-BOOK|R009|Introduction to Algorithms|580.00|10|978-0262033848|Cormen et al.|4
+LAB|101|Arduino Mega 2560|45.99|20|24|Generic|SN-101
+LAB|102|Oscilloscope DS1054Z|349.00|8|36|Rigol|SN-102
+LAB|103|Raspberry Pi 4 Model B|75.50|15|12|Raspberry Pi Ltd|SN-103
+CAFE|201|Grilled Chicken Wrap|4.50|50|2026-06-01|0|450
+CAFE|202|Fresh Orange Juice|2.25|80|2026-05-20|1|120
+CAFE|203|Veggie Salad Box|3.75|40|2026-05-18|1|220
+BOOK|301|Introduction to Algorithms|89.99|30|978-0262033848|Cormen et al.|4
+BOOK|302|Clean Code|42.00|25|978-0132350884|Robert C. Martin|1
+BOOK|303|Design Patterns|55.00|18|978-0201633610|Gang of Four|1

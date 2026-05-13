@@ -11,6 +11,7 @@ private:
     string serialNumber;
 
 public:
+    static LabHardware *fromString(const string &line);
     LabHardware();
     LabHardware(const string &id, const string &name, double price, int stock,
                 int warrantyMonths, const string &manufacturer,

@@ -2,7 +2,8 @@
 #define DORM_DELIVERY_H
 
 #include "DeliveryMethod.h"
-#include "project_config.h"
+
+constexpr double DELIVERY_SURCHARGE = 2.50;
 
 class DormDelivery : public DeliveryMethod
 {
